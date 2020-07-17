@@ -1,7 +1,9 @@
 <?php 
     include 'connection.php';
-	session_start(); 
-    if($_SESSION['login'] = "") header('Location: login.php');
+	session_start();
+    if (!isset($_SESSION['login'])){
+        header("Location: index.php");
+    }
 ?>
 <html lang="en">
 <head>
@@ -15,12 +17,13 @@
         include 'header.php'
     ?>
 <body>
-    <div class="container">
-        <div>
-        <div class="jumbotron text-center">
-        <h3>Data Relawan Covid</h3> <br>
+<div>
+<div>
+<img src="./assets/img/3652872.jpg" class="img-height" alt="">
+        <h3 class="text-center mt-3 mb-3">Data Relawan Covid</h3> <br>
          </div>
-         <div class="text-right mt-3 mb-3">
+    <div class="container">
+    <div class="text-right mb-3">
          <a href="add_relawan.php" class="btn btn-primary">Tambah Relawan</a>
          </div>
     <table class="table">

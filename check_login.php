@@ -11,6 +11,7 @@
 	if($result->num_rows > 0){
 		// echo "User ada";
 		while($row = $result->fetch_assoc()) {
+			session_start();
 			$_SESSION['user'] = $row['username']; 
 			$_SESSION['pass'] = $row['pass'];
 			$_SESSION['login'] = 'login';

@@ -3,81 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
      <link rel="stylesheet" href="assets/css/styles.css" />
-     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <?
 include "connection.php";
 include "header.php";
-$provs = [
-        'Aceh'
-        ,
-        'Bali'
-        ,
-        'Banten'
-        ,
-        'Bengkulu'
-        ,
-        'DKI Jakarta'
-        ,
-        'Gorontalo'
-        ,
-        'Jambi'
-        ,
-        'Jawa Barat'
-        ,
-        'Jawa Tengah'
-        ,
-        'Jawa Timur'
-        ,
-        'Kalimantan Barat'
-        ,
-        'Kalimantan Selatan'
-        ,
-        'Kalimantan Tengah'
-        ,
-        'Kalimantan Timur'
-        ,
-        'Kalimantan Utara'
-        ,
-        'Kepulauan Bangka Belitung'
-        ,
-        'Kepulauan Riau'
-        ,
-        'Lampung'
-        ,
-        'Maluku'
-        ,
-        'Maluku Utara'
-        ,
-        'Nusa Tenggara Barat'
-        ,
-        'Nusa Tenggara Timur'
-        ,
-        'Papua'
-        ,
-        'Papua Barat'
-        ,
-        'Riau'
-        ,
-        'Sulawesi Barat'
-        ,
-        'Sulawesi Selatan'
-        ,
-        'Sulawesi Tengah'
-        ,
-        'Sulawesi Tenggara'
-        ,
-        'Sulawesi Utara'
-        ,
-        'Sumatera Barat'
-        ,
-        'Sumatera Selatan'
-        ,
-        'Sumatera Utara'
-        ,
-        'Yogyakarta'
-        ,
-];
 ?>
 <div class="container">
 <h1>Form Relawan</h1>
@@ -95,6 +25,76 @@ $provs = [
     <label for="exampleInputPassword1">Province</label>
     <select name="province" class="form-control" id="exampleFormControlSelect1">
     <?php
+        $provs = [
+          'Aceh'
+          ,
+          'Bali'
+          ,
+          'Banten'
+          ,
+          'Bengkulu'
+          ,
+          'DKI Jakarta'
+          ,
+          'Gorontalo'
+          ,
+          'Jambi'
+          ,
+          'Jawa Barat'
+          ,
+          'Jawa Tengah'
+          ,
+          'Jawa Timur'
+          ,
+          'Kalimantan Barat'
+          ,
+          'Kalimantan Selatan'
+          ,
+          'Kalimantan Tengah'
+          ,
+          'Kalimantan Timur'
+          ,
+          'Kalimantan Utara'
+          ,
+          'Kepulauan Bangka Belitung'
+          ,
+          'Kepulauan Riau'
+          ,
+          'Lampung'
+          ,
+          'Maluku'
+          ,
+          'Maluku Utara'
+          ,
+          'Nusa Tenggara Barat'
+          ,
+          'Nusa Tenggara Timur'
+          ,
+          'Papua'
+          ,
+          'Papua Barat'
+          ,
+          'Riau'
+          ,
+          'Sulawesi Barat'
+          ,
+          'Sulawesi Selatan'
+          ,
+          'Sulawesi Tengah'
+          ,
+          'Sulawesi Tenggara'
+          ,
+          'Sulawesi Utara'
+          ,
+          'Sumatera Barat'
+          ,
+          'Sumatera Selatan'
+          ,
+          'Sumatera Utara'
+          ,
+          'Yogyakarta'
+          ,
+  ];
         foreach ($provs as $value) {
             echo "<option value=$value>$value</option>";
         }

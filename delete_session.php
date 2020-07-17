@@ -1,10 +1,8 @@
 <?php
 session_start();
+$_SESSION['login'] = '';
 unset($_SESSION['login']);
+session_unset();
 session_destroy();
-
-echo 
-"<a
-                href=\"login.php\">login</a>
-                &nbsp;";
+header("Location: index.php");
 ?>
