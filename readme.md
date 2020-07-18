@@ -66,6 +66,14 @@ dengan syntax
 
 ![code](https://user-images.githubusercontent.com/39334864/87849278-73a45d00-c911-11ea-8945-5a7c7af58889.png)
 
+4. Hapus data relawan
+
+pada hapus data relawan kami mengambil data tersebut berdasarkan id yg dikirim didalam parameter, lalu dihapus menggunakan syntax
+
+![code](https://user-images.githubusercontent.com/39334864/87849393-7f445380-c912-11ea-9e16-906f4e348f39.png)
+
+ketika Berhasil akan meredirect ke dashboard namun ketika gagal akan menampilkan pesan yg dikirim
+
 
 
 
