@@ -1,5 +1,3 @@
-https://covid06tpmlm010.000webhostapp.com/
-
 Tugas Uas Pemrograman Web 2 Kelompok 7
 Anggota :
 - Riswan Ardiansah 17101101402
@@ -75,6 +73,17 @@ pada hapus data relawan kami mengambil data tersebut berdasarkan id yg dikirim d
 ketika Berhasil akan meredirect ke dashboard namun ketika gagal akan menampilkan pesan yg dikirim
 
 
+5. Mencetak Data
 
+Pada cetak data kami dibantu menggunakan library fpdf , bisa dicek http://www.fpdf.org/ 
+
+data yg akan dicetak, semua data yg diambil didalam data relawan menggunakan syntax
+
+![code](https://user-images.githubusercontent.com/39334864/87849478-4193fa80-c913-11ea-91d1-fccd47d738fd.png)
+
+
+
+**Hasil** 
+### **https://covid06tpmlm010.000webhostapp.com/**
 
 
