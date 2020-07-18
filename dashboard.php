@@ -20,7 +20,11 @@
 <div>
 <div>
 <img src="./assets/img/3652872.jpg" class="img-height" alt="">
-        <h3 class="text-center mt-3 mb-3">Data Relawan Covid</h3> <br>
+        <h3 class="text-center mt-3">Data Relawan Covid</h3> <br>
+        <?php $tanggal = new DateTime('now', new DateTimezone('Asia/Jakarta')); ?>
+                <?php 
+                $dueDate = $tanggal->format("d-F-y H:i:s");
+                echo "<p class='text-center mb-3'>Per $dueDate</p>" ?> <br>
          </div>
     <div class="container">
     <div class="text-right mb-3">
