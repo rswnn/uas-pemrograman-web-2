@@ -28,3 +28,13 @@ untuk menvalidasi antara form yg di input dengan data user yg sudah tersedia di 
 ![code](https://user-images.githubusercontent.com/39334864/87848714-ff67ba80-c90c-11ea-9d6a-550a35b3ffd5.png)
 
 ketika users ditemukan, lalu akan mensave session dan redirect ke page dashboard, namun ketika gagal akan kembali ke page tersebut
+
+2. Tampilan Dashboard / Home 
+
+<img width="800" alt="Screen Shot 2020-07-18 at 15 47 58" src="https://user-images.githubusercontent.com/39334864/87848856-1824a000-c90e-11ea-8443-e7e32d70e1d3.png">
+
+Pada Page ini, akan menampilkan data relawan yg sudah ada didalam web. untuk menampilkan data yg tersebut. kami menggunakan syntax
+
+![code](https://user-images.githubusercontent.com/39334864/87848918-ca5c6780-c90e-11ea-95b1-76c76c81e972.png)
+
+syntax tersebut akan mengambil semua row / data relawan yg sudah ada di table relawan
