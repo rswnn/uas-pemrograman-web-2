@@ -75,6 +75,9 @@ ketika Berhasil akan meredirect ke dashboard namun ketika gagal akan menampilkan
 
 5. Mencetak Data
 
+<img width="800" alt="Screen Shot 2020-07-18 at 16 51 39" src="https://user-images.githubusercontent.com/39334864/87850010-1ca18680-c917-11ea-96b2-539db259cb74.png">
+
+
 Pada cetak data kami dibantu menggunakan library fpdf , bisa dicek http://www.fpdf.org/ 
 
 data yg akan dicetak, semua data yg diambil didalam data relawan menggunakan syntax
