@@ -10,6 +10,16 @@ body {
 
 .body-login {
   background: #2196f3 !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+.body-bg {
+  background: #2196f3 !important;
+}
+
+.top-content {
+  margin-top: 100px !important;
 }
 
 .img-height {

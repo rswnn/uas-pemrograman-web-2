@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light justify-content-between body-login">
+<nav class="navbar navbar-light bg-light justify-content-between body-login header-common" >
   <div class="container">
   <a class="navbar-brand text-light" href="dashboard.php">Relawan Covid 19</a>
   

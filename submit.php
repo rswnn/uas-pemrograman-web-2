@@ -17,3 +17,4 @@ if (mysqli_query($db, $query)) {
     echo $fullname;
     echo  mysqli_error($db);
 }
+?>

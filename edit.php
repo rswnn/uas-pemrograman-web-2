@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-     <link rel="stylesheet" href="assets/css/styles.css" />
+     <link rel="stylesheet" href="styles.css" />
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<?
+<?php
 include "connection.php";
 include "header.php";
 $provs = [
@@ -81,29 +81,29 @@ $provs = [
         ,
 ];
 ?>
-<?
+<?php
 $id_relawan = $_GET['id_relawan'];
 
 $query="SELECT * FROM relawan WHERE id =\"$id_relawan\"";
 $result=mysqli_query($db,$query);
 $row= $result -> fetch_array(MYSQLI_ASSOC);
 ?>
-<div class="container">
+<div class="container top-content">
 <h1>Form Relawan</h1>
 <form action="update_relawan.php" method="post">
-<input type="hidden" name="id" value="<? echo " $row[id]" ?>">
+<input type="hidden" name="id" value="<?php echo " $row[id]" ?>">
   <div class="form-group">
     <label for="exampleInputEmail1">Nama Lengkap</label>
-    <input name="fullname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Lengkap" value="<? echo " $row[fullname]" ?>">
+    <input name="fullname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Lengkap" value="<?php echo " $row[fullname]" ?>">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Alamat</label>
-    <input name="address" type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat" value="<? echo " $row[address]" ?>">
+    <input name="address" type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat" value="<?php echo " $row[address]" ?>">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Province</label>
     <select name="province" class="form-control" id="exampleFormControlSelect1">
-    <option disabled selected> <? echo " $row[province]" ?> </option>
+    <option disabled selected> <?php echo " $row[province]" ?> </option>
     <?php
         foreach ($provs as $value) {
             echo "<option value=$value>$value</option>";
@@ -111,18 +111,18 @@ $row= $result -> fetch_array(MYSQLI_ASSOC);
       ?>
     </select>
   </div>
-  <input type="hidden" name="temp_province" value="<? echo " $row[province]" ?>">
+  <input type="hidden" name="temp_province" value="<?php echo " $row[province]" ?>">
   <div class="form-group">
     <label for="exampleInputPassword1">Email</label>
-    <input name="email" type="text" class="form-control" id="exampleInputPassword1" placeholder="Email" value="<? echo " $row[email]" ?>">
+    <input name="email" type="text" class="form-control" id="exampleInputPassword1" placeholder="Email" value="<?php echo " $row[email]" ?>">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">No Handphone</label>
-    <input name="no_handphone" type="text" class="form-control" id="exampleInputPassword1" placeholder="No Handphone" value="<? echo " $row[no_handphone]" ?>">
+    <input name="no_handphone" type="text" class="form-control" id="exampleInputPassword1" placeholder="No Handphone" value="<?php echo " $row[no_handphone]" ?>">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Kemampuan</label>
-    <input name="skills" type="text" class="form-control" id="exampleInputPassword1" placeholder="Kemampuan" value="<? echo " $row[skills]" ?>">
+    <input name="skills" type="text" class="form-control" id="exampleInputPassword1" placeholder="Kemampuan" value="<?php echo " $row[skills]" ?>">
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>

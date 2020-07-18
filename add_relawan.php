@@ -5,14 +5,14 @@
      <link rel="stylesheet" href="styles.css" />
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
-<?
+<?php
 include "connection.php";
 include "header.php";
 ?>
-<div class="container">
+<div class="container top-content">
 <h1>Form Relawan</h1>
 <form action="submit.php" method="post">
-<input type="hidden" name="id" value="<? echo " $row[id]" ?>">
+<input type="hidden" name="id" value="<?php echo " $row[id]" ?>">
   <div class="form-group">
     <label for="exampleInputEmail1">Nama Lengkap</label>
     <input name="fullname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama Lengkap">

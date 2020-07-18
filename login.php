@@ -21,7 +21,7 @@ if (!isset($_SESSION['login'])) {
      <link rel="stylesheet" href="styles.css" />
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="body-login">
+<body class="body-bg">
   <div class="container">
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">

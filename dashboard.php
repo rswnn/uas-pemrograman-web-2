@@ -14,10 +14,10 @@
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <?php
-        include 'header.php'
+        include 'header.php';
     ?>
 <body>
-<div>
+<div class="top-content">
 <div>
 <img src="./assets/img/3652872.jpg" class="img-height" alt="">
         <h3 class="text-center mt-3">Data Relawan Covid</h3> <br>

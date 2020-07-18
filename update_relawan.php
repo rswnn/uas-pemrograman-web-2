@@ -1,4 +1,4 @@
-<?
+<?php
 include "connection.php";
 $id = $_POST['id'];
 $fullname = $_POST['fullname'];
