@@ -51,3 +51,22 @@ form tersebut akan menyimpan di database dengan syntax
 
 pertama akan mengambil setiap variable dan ditampung kedalam variable, lalu insert data pada table relawan
 
+3. Tampilan Edit Relawan
+
+<img width="800" alt="Screen Shot 2020-07-18 at 16 06 08" src="https://user-images.githubusercontent.com/39334864/87849167-9f731300-c910-11ea-8351-291a9916d5a2.png">
+
+
+Pada Page ini, akan menampilkan form untuk edit data relawan, pertama kami akan mengambil data tersebut berdasarkan id yg dikirim didalam parameter
+dan dicari menggunakan syntax & query
+
+![code](https://user-images.githubusercontent.com/39334864/87849227-127c8980-c911-11ea-85cb-fdc4fb308626.png)
+
+setiap data / row yg didapatkan ditampung ke dalam value tag input, setelah megupdate data dan melakukan submit, data tesebut akan mengubah data sebelumnya
+dengan syntax 
+
+![code](https://user-images.githubusercontent.com/39334864/87849278-73a45d00-c911-11ea-8945-5a7c7af58889.png)
+
+
+
+
+
