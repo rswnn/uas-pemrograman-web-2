@@ -38,3 +38,16 @@ Pada Page ini, akan menampilkan data relawan yg sudah ada didalam web. untuk men
 ![code](https://user-images.githubusercontent.com/39334864/87848918-ca5c6780-c90e-11ea-95b1-76c76c81e972.png)
 
 syntax tersebut akan mengambil semua row / data relawan yg sudah ada di table relawan
+
+
+3. Tampilan Tambah Relawan
+
+<img width="800" alt="Screen Shot 2020-07-18 at 15 57 56" src="https://user-images.githubusercontent.com/39334864/87849001-78681180-c90f-11ea-81fd-2ed9be6b56be.png">
+
+Pada Page ini, akan menampilkan form untuk membuat data relawan baru. ketika semua form telah diisi dan melakukan submit, isi pada
+form tersebut akan menyimpan di database dengan syntax
+
+![code](https://user-images.githubusercontent.com/39334864/87849097-0cd27400-c910-11ea-81d0-a104d0bc33cc.png)
+
+pertama akan mengambil setiap variable dan ditampung kedalam variable, lalu insert data pada table relawan
+
